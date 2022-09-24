@@ -1,11 +1,13 @@
-# Anteckningar - 2022-09-22
-Demonstration av villkorssatser (if, else, while och for) samt repetition av pekare.
+# Anteckningar - 2022-09-23
+Implementering av neuralt nätverk i C++ (del I) - Skapande av strukt för dense-lager.
 
-Filen pointers.c innehåller den repetitionsuppgift som genomfördes för att repetera pekare via funktionsanrop.
-Här genomförs både "pass-by-value" (passing av kopior) samt "pass-by-reference" (passering av adresser) vid funktionsanrop.
+I detta stadie har samtliga medlemmar deklarerats (vektorer för lagring av nodernas utsignaler, avvikelser, bias samt vikter).
+Ett flertal medlemsfunktioner, såsom två konstruktorer, en destruktor, en initieringsrutin, en tömningsrutin med mera har initierats.
+Därmed kan dense-lager med godtyckligt antal noder samt vikter per nod skapas. Dock saknars funktionalitet för implementering av
+feedforward, backpropagation samt optimering, vilket skall läggas till i nästa steg, tillsammans med en utskriftsrutin för att
+skriva ut samtliga parametrar.
 
-Filen main.c demonstrerar olika typer av villkorssatser för implementering av en temperaturregulator.
-Detaljerad information finns här att läsa om if-, else if-, while- och for-satsen.
+Filen dense_layer.hpp innehåller strukten dense-layer, som används för att implementera dense-lager. Denna strukt är inte komplett än.
 
-
-
+Filen main.cpp demonstrerar hur skapandet av ett dense-lager innehållande tre noder samt fyra vikter per nod. I nästa steg skall
+kontroll ske att initiering av dense-lagrets parametrar har genomförts korrekt.
